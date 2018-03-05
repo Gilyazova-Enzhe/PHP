@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second</title>
+</head>
+<body>
+
+<?php if (isset($_REQUEST['go'])):?>
+<?php else:?>
+<form action="Second.php" method="POST">
+    <label for="message">
+        Massage
+    </label>
+    <textarea id="message" name="message"></textarea><br>
+    <input type="submit" name="go" value="Go"><br>
+</form>
+<?php endif?>
+
+</body>
+</html>
